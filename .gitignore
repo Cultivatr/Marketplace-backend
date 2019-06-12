@@ -1,4 +1,2 @@
-.mypy_cache
-../.mypy_cache
-.pytest_cache
-.cache
+__pycache__
+.cscode
