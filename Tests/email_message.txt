@@ -1,0 +1,7 @@
+${FARM_NAME}, 
+
+Your order has been reviewed, please log in to your account to see the status. 
+
+[Link to site here]
+
+Cultivar Admin Team

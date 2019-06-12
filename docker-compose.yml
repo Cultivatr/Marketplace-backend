@@ -1,0 +1,29 @@
+version: '3.7'
+
+services: 
+
+  # Backend API
+  cultivatr-back-end: 
+    container_name: cultivatr
+    build: ./
+    command: pipenv shell
+    command: python server2.py
+    working_dir: /usr/src/MarketPlace/back-end
+    environment:
+      DATABASE_URL: postgres://postgres:secret@postgres:5432/cultivatr
+    ports:
+      - 5000:5000
+    volumes:
+      - ./:/usr/src/MarketPlace/back-end
+
+  # Postgres
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: cultivatr
+      POSTGRES_HOST: postgres
+    build: ./postgres
+    ports:
+      - 6000:6000

@@ -1,0 +1,8 @@
+1	12	25	25.00	2018-10-22	1234	123	Angus cattle	Yes	2018-10-30	Pasture	2019-02-25	50	500	490	300											35	2019-03-06	somewhere
+1	13	25	50.00	2018-08-05	2345	324	Billowy	Yes	2018-10-31	Pasture	2019-02-26	25	200	190	200											0	2019-03-07	somewhere2
+2	1	25	125.00												200	2018-09-16	Majestic	Yes	Yes	Puzzled	attack	25	25	25	20	35	2019-01-30	somewhere
+2	2	30	150.00												200	2018-09-17	Crown	Yes	Yes	Puzzled	attack	25	23	23	23	35	2019-01-31	somewhere
+2	3	30	175.00												400	2018-09-18	Royal	No	Yes	Puzzled	attack	30	25	25	25	20	2019-02-01	somewhere2
+2	4	30	175.00												200	2018-09-19	Royal	Yes	Yes	Puzzled	attack2	32	25	22	22	0	2019-02-02	somewhere3
+2	5	30	175.00												100	2018-09-20	Royal	Yes	No	Keto	attack3	32	20	20	20	0	2019-02-03	somewhere4
+2	6	30	175.00												200	2018-09-21	Royal	Yes	No	Keto	attack4	32	25	22	22	0	2019-02-04	somewhere5
