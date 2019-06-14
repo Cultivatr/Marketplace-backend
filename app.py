@@ -7,24 +7,19 @@ from datetime import datetime
 from flask_migrate import Migrate
 import email_system
 
-# app=Flask(__name__)
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-
-# db=SQLAlchemy(app)
-# migrate = Migrate(app, db)
-
-
-# CORS(app)
-
-
-app = Flask(__name__)
+app=Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/cultivatr'
-db = SQLAlchemy(app)
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+
+db=SQLAlchemy(app)
 migrate = Migrate(app, db)
 CORS(app, supports_credentials=True)
+
+#THE FOLLOWING IS FOR LOCAL PSQL
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/cultivatr'
+
+
 
 
 class Users(db.Model):
