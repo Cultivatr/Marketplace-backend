@@ -142,9 +142,6 @@ class LivestockBreed(db.Model):
     UniqueConstraint('breed', 'livestock_id', name='breed_id_constraint')
 
 
-db.create_all()
-
-
 @app.route("/breed/add/", methods=['POST'])
 def add_new_breed():
     data = request.get_json()
