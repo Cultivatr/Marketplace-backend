@@ -17,7 +17,7 @@ class Livestock(db.Model):
     single_brand = db.Column(db.Text)
     est_birthdate = db.Column(db.Date)
     registration_number = db.Column(db.Float)
-    rfid_tag = db.Column(db.Integer)
+    rfid_tag = db.Column(db.Text)
     starting_weight = db.Column(db.Integer)
     hanging_weight = db.Column(db.Integer)
     chargebacks = db.Column(db.Integer)
