@@ -37,5 +37,6 @@ def modify_lifestock(idinfo):
     livestock_to_update.price_paid = data.get('finalPrice'),
     livestock_to_update.delivered_date = data.get('deliveredDate'),
     livestock_to_update.delivered_to = data.get('deliveredTo'),
+    livestock_to_update.status = data.get('status'),
     db.session.commit()
     return jsonify({"Success": True})

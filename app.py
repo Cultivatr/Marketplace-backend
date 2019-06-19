@@ -8,9 +8,9 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 # Heroku Postgresql
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 # Local PostgreSQL
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/Cultivatr'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/cultivatr'
 
 CORS(app, supports_credentials=True)
 

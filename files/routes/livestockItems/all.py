@@ -12,7 +12,6 @@ def get_indiv_livestock_items(idinfo):
     p_items = db.session.query(LivestockItems)
     output = []
     for p_item in p_items:
-        print(p_item)
         p_item_data = {}
         p_item_data[p_item.id] = p_item.item
         output.append(p_item_data)
