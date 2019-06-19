@@ -2,7 +2,7 @@ import smtplib
 
 MY_ADDRESS = 'noreply.cultivatr@gmail.com'
 MY_PASSWORD = 'Cheese111'
-DAN = 'byrondaniels@hotmail.com'
+DAN = 'dberezan@cultivatr.ca'
 
 
 def send_email_item_status(farm_name, user_email):
