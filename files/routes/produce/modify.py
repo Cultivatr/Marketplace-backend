@@ -36,6 +36,8 @@ def modify_produce(idinfo):
     produce_to_update.delivered_date = data.get('deliveredDate'),
     produce_to_update.delivered_to = data.get('deliveredTo'),
     produce_to_update.comments = data.get('comments'),
+    produce_to_update.status = data.get('status'),
+
 
     db.session.commit()
     return jsonify({"Success": True})

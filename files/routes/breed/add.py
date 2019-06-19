@@ -15,5 +15,4 @@ def add_new_breed(idinfo):
         breed=data.get('breed'))
     db.session.add(new_breed)
     db.session.commit()
-    print(new_breed)
     return jsonify({new_breed.livestock_id: new_breed.breed}), 201

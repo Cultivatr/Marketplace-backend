@@ -14,5 +14,6 @@ def update_produce_items(idinfo):
     prodToUpdate = db.session.query(Produce).filter(
         Produce.id == filterId).first()
     prodToUpdate.status = data.get('nextStatus')
+
     db.session.commit()
     return jsonify({"Success": True})

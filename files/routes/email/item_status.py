@@ -1,15 +1,15 @@
-from flask import current_app as app
+from flask import current_app as app, request, jsonify
 from files.gauth import authorized
-import files.email_system
+import files.email_system as email
 
-@app.route("/email/", methods=['POST'])
+@app.route("/email/item_status/", methods=['POST'])
 @authorized
-def send_email_alert(idinfo):
+def send_email_item_status(idinfo):
     if idinfo == 'unauthorized':
         return 'unauthorized', 401
     data = request.get_json()
     farm_name = data.get('farmName')
     user_email = data.get('email')
 
-    email_system.send_email(farm_name, user_email)
+    email.send_email_item_status(farm_name, user_email)
     return jsonify({"Success": True})
