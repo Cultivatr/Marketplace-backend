@@ -6,14 +6,14 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-cors = "*"
-"psycopg2" = "*"
 simplejson = "*"
 pytest = "*"
-"psycopg2-binary" = "*"
 "Flask-SQLAlchemy" = "*"
 Flask-Migrate = "*"
 Flask-Heroku = "*"
 gunicorn = "*"
+google-auth = "*"
+requests = "*"
 
 [dev-packages]
 autopep8 = "*"
